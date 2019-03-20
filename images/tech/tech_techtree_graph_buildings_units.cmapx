@@ -1,0 +1,21 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="tech_technician_full.html" title="Technician" alt="" coords="517,242,513,234,504,228,489,222,470,219,450,218,429,219,411,222,396,228,386,234,383,242,386,249,396,256,411,261,429,264,450,266,470,264,489,261,504,256,513,249"/>
+<area shape="poly" id="node5" href="tech_aerodrome_full.html" title="Aerodrome" alt="" coords="365,362,280,346,196,362,196,389,365,389"/>
+<area shape="poly" id="node9" href="tech_battle_machine_full.html" title="Battle\nMachine" alt="" coords="511,370,508,359,499,349,486,341,469,336,450,334,431,336,414,341,400,349,392,359,389,370,392,381,400,391,414,399,431,404,450,406,469,404,486,399,499,391,508,381"/>
+<area shape="poly" id="node10" href="tech_air_ballista_full.html" title="Air\nBallista" alt="" coords="172,370,170,359,162,349,150,341,135,336,118,334,101,336,86,341,74,349,66,359,63,370,66,381,74,391,86,399,101,404,118,406,135,404,150,399,162,391,170,381"/>
+<area shape="poly" id="node12" href="tech_catapult_full.html" title="Catapult" alt="" coords="642,370,640,362,632,356,620,350,605,347,588,346,572,347,557,350,545,356,537,362,535,370,537,377,545,384,557,389,572,393,588,394,605,393,620,389,632,384,640,377"/>
+<area shape="poly" id="node2" href="tech_farm_full.html" title="Farm" alt="" coords="1083,234,1034,218,985,234,985,261,1083,261"/>
+<area shape="poly" id="node4" href="tech_livestock_full.html" title="Livestock" alt="" coords="1158,370,1155,362,1147,356,1133,350,1117,347,1098,346,1079,347,1062,350,1049,356,1040,362,1037,370,1040,377,1049,384,1062,389,1079,393,1098,394,1117,393,1133,389,1147,384,1155,377"/>
+<area shape="poly" id="node14" href="tech_horseman_full.html" title="Horseman" alt="" coords="1013,370,1010,362,1001,356,987,350,969,347,950,346,930,347,913,350,899,356,890,362,887,370,890,377,899,384,913,389,930,393,950,394,969,393,987,389,1001,384,1010,377"/>
+<area shape="poly" id="node3" href="tech_blacksmith_full.html" title="Blacksmith" alt="" coords="961,234,876,218,792,234,792,261,961,261"/>
+<area shape="poly" id="node13" href="tech_airship_full.html" title="Airship" alt="" coords="330,478,327,470,320,463,309,458,296,455,280,454,265,455,251,458,240,463,233,470,231,478,233,485,240,492,251,497,265,500,280,502,296,500,309,497,320,492,327,485"/>
+<area shape="poly" id="node16" href="tech_guard_full.html" title="Guard" alt="" coords="1332,370,1330,362,1324,356,1314,350,1302,347,1288,346,1275,347,1263,350,1253,356,1247,362,1245,370,1247,377,1253,384,1263,389,1275,393,1288,394,1302,393,1314,389,1324,384,1330,377"/>
+<area shape="poly" id="node19" href="tech_ornithopter_full.html" title="Ornithopter" alt="" coords="774,478,770,470,761,463,745,458,726,455,704,454,683,455,664,458,648,463,639,470,635,478,639,485,648,492,664,497,683,500,704,502,726,500,745,497,761,492,770,485"/>
+<area shape="poly" id="node6" href="tech_worker_full.html" title="Worker" alt="" coords="1109,29,1106,22,1099,15,1088,10,1074,7,1058,5,1042,7,1028,10,1016,15,1009,22,1007,29,1009,37,1016,43,1028,49,1042,52,1058,53,1074,52,1088,49,1099,43,1106,37"/>
+<area shape="poly" id="node7" href="tech_defense_tower_full.html" title="Defense\nTower" alt="" coords="768,228,696,197,625,228,625,277,767,277"/>
+<area shape="poly" id="node15" href="tech_technodrome_full.html" title="Technodrome" alt="" coords="687,118,588,101,490,118,490,145,687,145"/>
+<area shape="poly" id="node17" href="tech_barracks_full.html" title="Barracks" alt="" coords="1231,118,1162,101,1092,118,1092,145,1231,145"/>
+<area shape="poly" id="node18" href="tech_castle_full.html" title="Castle" alt="" coords="1362,118,1308,101,1255,118,1255,145,1362,145"/>
+<area shape="poly" id="node8" href="tech_archer_full.html" title="Archer" alt="" coords="1251,242,1249,234,1242,228,1232,222,1219,219,1204,218,1190,219,1177,222,1167,228,1160,234,1158,242,1160,249,1167,256,1177,261,1190,264,1204,266,1219,264,1232,261,1242,256,1249,249"/>
+<area shape="poly" id="node11" href="tech_swordman_full.html" title="Swordman" alt="" coords="1457,242,1454,234,1444,228,1430,222,1411,219,1391,218,1371,219,1352,222,1338,228,1328,234,1325,242,1328,249,1338,256,1352,261,1371,264,1391,266,1411,264,1430,261,1444,256,1454,249"/>
+</map>

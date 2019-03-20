@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Tech Overview (GlestPack) | Glest
+            </title>
+    <meta name="description" content="Glest RTS Game Help and Documentation">
+    <link rel="canonical" href="http://localhost:4000/tech_overview.html">
+    <link rel="alternate" type="application/rss+xml"  href="http://localhost:4000/feed.xml" title="Glest Blog">
+    <link rel="alternate" type="application/rss+xml" title="Recent Changes to website" href="https://github.com/Glest/glest.github.io/commits/master.atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to glest-source:develop" href="https://github.com/Glest/glest-source/commits/develop.atom">
+    <link rel="alternate" type="application/rss+xml" title="Recent Commits to glest-data:develop" href="https://github.com/Glest/glest-data/commits/develop.atom">
+    <link rel="stylesheet" href="/docs/assets/css/style.css">
+    <!--including Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+<!-- The scripts below are used by the convert faction 2 html perl script and may not
+    be neeeded, or it may be changed after they python upgrade
+
+    If not for this, we could use the head.html file, but instead we need a separate
+    techtree_head.html -->
+
+    <!-- stuff for table-sorting, see jquery.com and datatables.net for details
+-->
+<script type="text/javascript" language="javascript" src="js/jquery-1.12.0.min.js" ></script>
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.min.js"></script>
+<!--
+<script type="text/javascript" language="javascript" src="js/TableTools.min.js"></script>
+-->
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+
+		$('#table_all').dataTable( {
+			'bAutoWidth': false,
+			"bPaginate": false,
+			"bSortClasses": false,
+			"sDom": '<"top"iflp>rt<"bottom"><"clear">',
+		<!--
+			"oTableTools": {
+				"sSwfPath": "js/copy_cvs_xls_pdf.swf"
+			},
+		-->
+			"aaSorting": [[ 1, "asc" ]]
+			});
+	});
+</script>
+  </head>
+<body>
+  <div class="container">
+    <a href="/docs"><img class="centered" src="/docs/assets/images/logo_412x207.png" alt="Glest logo" title="Glest logo" width="412" height="207"></a>
+    <h2 class="subtitle">Tech Overview (GlestPack)</h2>
+
+    <div id="content">
+        <div id="article">
+            	+ADw-a href+AD0AIg-index.html+ACIAPg-GlestPack Techtree summary (home)+ADw-/a+AD4- +AHw-
+	+ADw-a href+AD0AIg-/docs/+ACIAPg-Game Help and Documentation+ADw-/a+AD4-
++ADw-H4+AD4-Choose faction: +ACY-nbsp+ADsAPA-A HREF+AD0-egypt+AF8-overview.html+AD4-Egypt+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-greece+AF8-overview.html+AD4-Greece+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-indian+AF8-overview.html+AD4-Indian+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-magic+AF8-overview.html+AD4-Magic+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-natulka+AF8-overview.html+AD4-Natulka+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-norsemen+AF8-overview.html+AD4-Norsemen+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-persian+AF8-overview.html+AD4-Persian+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-romans+AF8-overview.html+AD4-Romans+ADw-/a+AD4- +AHwAJg-nbsp+ADs-
++ACY-nbsp+ADsAPA-A HREF+AD0-tech+AF8-overview.html+AD4APA-I+AD4-Tech+ADw-/I+AD4APA-/a+AD4-
+ +ADw-/H4+AD4APA-P+AD4-
++ADw-P+AD4-
++ADw-H4+AD4-Techtree Diagrams: +ADw-a href+AD0AIg-tech+AF8-techtree+AF8-clickable+AF8-map+AF8-buildings.html+ACIAPg-Buildings+ADw-/a+AD4- +AHw-
++ADw-a href+AD0AIg-tech+AF8-techtree+AF8-clickable+AF8-map+AF8-buildings+AF8-units.html+ACIAPg-Buildings Units+ADw-/a+AD4- +AHw-
++ADw-a href+AD0AIg-tech+AF8-techtree+AF8-clickable+AF8-map+AF8-all.html+ACIAPg-All+ADw-/a+AD4APA-/H4+AD4-
++ADw-P+AD4-
++ADw-H4+AD4-Special Pages: +ADw-A HREF+AD0AIg-compare.html+ACIAPg-Compare Units+ADw-/a+AD4- +AHw-
++ADw-A HREF+AD0AIg-all.html+ACIAPg-All Units of all Factions+ADw-/a+AD4- +AHw-
++ADw-A HREF+AD0AIg-glestkeys.html+ACIAPg-Keyboard Assignment+ADw-/a+AD4- +AHw-
++ADw-A HREF+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACIAPg-Damage Multipliers for Attack Types versus Armor Types+ADw-/a+AD4APA-/H4+AD4APA-P+AD4-
++ADw-H1+AD4-Overview for Faction: Tech+ADw-/H1+AD4-
+
++ADw-H3+AD4-Combat Units+ADw-/H3+AD4- +ADw-TABLE BORDER+AD0-1 WIDTH+AD0AIg-100+ACUAIgA+ADw-TR+AD4- +ADw-TH+AD4- Name
+						+ADw-TH+AD4- Total Cost
+						+ADw-TH+AD4- Hit Points
+						+ADw-TH+AD4- Rege- nerate
+						+ADw-TH+AD4- Armor Strength
+						+ADw-TH+AD4- Armor Type
+						+ADw-TH+AD4- Sight Range
+					
+					+ADw-TH+AD4- Move Speed
+					+ADw-TH+AD4- Air / Ground
+					+ADw-TH+AD4- Attack Strength Land
+					+ADw-TH+AD4- Attack Strength Air
+					+ADw-TH+AD4- Attack Range
+				+ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/air+AF8-ballista/air+AF8-ballista.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Air Ballista+ACIAPgA8-A HREF+AD0AIg-tech+AF8-air+AF8-ballista+AF8-full.html+ACIAPg-Air Ballista+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-270+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-3000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-5+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-20+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-15+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4---
++ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-200+ACY-nbsp+ADsAKwAm-nbsp+ADs-75+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-15+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/airship/airship.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Airship+ACIAPgA8-A HREF+AD0AIg-tech+AF8-airship+AF8-full.html+ACIAPg-Airship+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-300+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-2800+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-4+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-20+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-leather+ACIAPg-Leather+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-15+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-120
++ADw-TD ALIGN+AD0-CENTER+AD4-Air+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-300+ACY-nbsp+ADsAKwAm-nbsp+ADs-150+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-8+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/archer/archer.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Archer+ACIAPgA8-A HREF+AD0AIg-tech+AF8-archer+AF8-full.html+ACIAPg-Archer+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-50+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-700+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-20+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-leather+ACIAPg-Leather+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-15+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-220
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-100+ACY-nbsp+ADsAKwAm-nbsp+ADs-50+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-100+ACY-nbsp+ADsAKwAm-nbsp+ADs-50+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-10+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/battle+AF8-machine/battle+AF8-machine.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Battle Machine+ACIAPgA8-A HREF+AD0AIg-tech+AF8-battle+AF8-machine+AF8-full.html+ACIAPg-Battle Machine+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-270+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-180+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-3200+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-2+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-45+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-11+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-240
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-400+ACY-nbsp+ADsAKwAm-nbsp+ADs-150+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-175+ACY-nbsp+ADsAKwAm-nbsp+ADs-75+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-12+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/catapult/catapult.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Catapult+ACIAPgA8-A HREF+AD0AIg-tech+AF8-catapult+AF8-full.html+ACIAPg-Catapult+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-210+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-120+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-1500+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-10+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-16+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-150
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-450+ACY-nbsp+ADsAKwAm-nbsp+ADs-150+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-12+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/defense+AF8-tower/defense+AF8-tower.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Defense Tower+ACIAPgA8-A HREF+AD0AIg-tech+AF8-defense+AF8-tower+AF8-full.html+ACIAPg-Defense Tower+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-7000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-30+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-16+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-120+ACY-nbsp+ADsAKwAm-nbsp+ADs-50+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-120+ACY-nbsp+ADsAKwAm-nbsp+ADs-50+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-12+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/guard/guard.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Guard+ACIAPgA8-A HREF+AD0AIg-tech+AF8-guard+AF8-full.html+ACIAPg-Guard+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-75+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-2+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-900+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-2+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-40+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-metal+ACIAPg-Metal+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-10+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-170
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-110+ACY-nbsp+ADsAKwAm-nbsp+ADs-30+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/horseman/horseman.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Horseman+ACIAPgA8-A HREF+AD0AIg-tech+AF8-horseman+AF8-full.html+ACIAPg-Horseman+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-2+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-1400+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-2+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-30+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-leather+ACIAPg-Leather+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-10+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-480
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-215+ACY-nbsp+ADsAKwAm-nbsp+ADs-25+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-3+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/ornithopter/ornithopter.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Ornithopter+ACIAPgA8-A HREF+AD0AIg-tech+AF8-ornithopter+AF8-full.html+ACIAPg-Ornithopter+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-900+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-4+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-15+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-organic+ACIAPg-Organic+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-15+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-270
++ADw-TD ALIGN+AD0-CENTER+AD4-Air+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-160+ACY-nbsp+ADsAKwAm-nbsp+ADs-100+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-150+ACY-nbsp+ADsAKwAm-nbsp+ADs-50+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-9+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/swordman/swordman.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Swordman+ACIAPgA8-A HREF+AD0AIg-tech+AF8-swordman+AF8-full.html+ACIAPg-Swordman+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-75+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-25+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-700+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-20+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-leather+ACIAPg-Leather+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-10+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-220
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-110+ACY-nbsp+ADsAKwAm-nbsp+ADs-30+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/technician/technician.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Technician+ACIAPgA8-A HREF+AD0AIg-tech+AF8-technician+AF8-full.html+ACIAPg-Technician+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-550+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-leather+ACIAPg-Leather+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-8+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-210
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-180+ACY-nbsp+ADsAKwAm-nbsp+ADs-100+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---
++ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-6+ADw-/TD+AD4-
++ADw-/TABLE+AD4-
++ADw-H3+AD4-Worker Units+ADw-/H3+AD4- +ADw-TABLE BORDER+AD0-1 WIDTH+AD0AIg-100+ACUAIgA+ADw-TR+AD4- +ADw-TH+AD4- Name
+						+ADw-TH+AD4- Total Cost
+						+ADw-TH+AD4- Hit Points
+						+ADw-TH+AD4- Rege- nerate
+						+ADw-TH+AD4- Armor Strength
+						+ADw-TH+AD4- Armor Type
+						+ADw-TH+AD4- Sight Range
+					
+					+ADw-TH+AD4- Move Speed
+					+ADw-TH+AD4- Air / Ground
+				+ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/livestock/cow.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Livestock+ACIAPgA8-A HREF+AD0AIg-tech+AF8-livestock+AF8-full.html+ACIAPg-Livestock+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-95+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg--10+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-0+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-organic+ACIAPg-Organic+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4---+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-Air+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/technician/technician.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Technician+ACIAPgA8-A HREF+AD0AIg-tech+AF8-technician+AF8-full.html+ACIAPg-Technician+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-550+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-leather+ACIAPg-Leather+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-8+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-210+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/worker/worker.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Worker+ACIAPgA8-A HREF+AD0AIg-tech+AF8-worker+AF8-full.html+ACIAPg-Worker+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-75+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg-1+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-600+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-1+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-leather+ACIAPg-Leather+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-9+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-190+ADw-/TD+AD4-
++ADw-TD ALIGN+AD0-CENTER+AD4-Ground+ADw-/TD+AD4-
++ADw-/TABLE+AD4-
++ADw-H3+AD4-Buildings+ADw-/H3+AD4- +ADw-TABLE BORDER+AD0-1 WIDTH+AD0AIg-100+ACUAIgA+ADw-TR+AD4- +ADw-TH+AD4- Name
+						+ADw-TH+AD4- Total Cost
+						+ADw-TH+AD4- Hit Points
+						+ADw-TH+AD4- Rege- nerate
+						+ADw-TH+AD4- Armor Strength
+						+ADw-TH+AD4- Armor Type
+						+ADw-TH+AD4- Sight Range
+					
+					+ADw-TH+AD4-Storage
+				+ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/aerodrome/aerodrome.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Aerodrome+ACIAPgA8-A HREF+AD0AIg-tech+AF8-aerodrome+AF8-full.html+ACIAPg-Aerodrome+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-200+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-6000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-5+ADw-/TD+AD4APA-TD+AD4APA-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/barracks/barracks.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Barracks+ACIAPgA8-A HREF+AD0AIg-tech+AF8-barracks+AF8-full.html+ACIAPg-Barracks+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-50+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/stone.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Stone+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-6000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-stone+ACIAPg-Stone+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-6+ADw-/TD+AD4APA-TD+AD4APA-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/blacksmith/blacksmith.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Blacksmith+ACIAPgA8-A HREF+AD0AIg-tech+AF8-blacksmith+AF8-full.html+ACIAPg-Blacksmith+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-6000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-12+ADw-/TD+AD4APA-TD+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPgAm-nbsp+ADs-200+ACY-nbsp+ADsAPA-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/castle/castle.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Castle+ACIAPgA8-A HREF+AD0AIg-tech+AF8-castle+AF8-full.html+ACIAPg-Castle+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/stone.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Stone+ACIAPg-300+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-9000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-stone+ACIAPg-Stone+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-15+ADw-/TD+AD4APA-TD+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPgAm-nbsp+ADs-2000+ACY-nbsp+ADsAPA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPgAm-nbsp+ADs-1200+ACY-nbsp+ADsAPA-IMG SRC+AD0AIg-images/resources/stone.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Stone+ACIAPgAm-nbsp+ADs-1500+ACY-nbsp+ADsAPA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPgAm-nbsp+ADs-150+ACY-nbsp+ADsAPA-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/defense+AF8-tower/defense+AF8-tower.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Defense Tower+ACIAPgA8-A HREF+AD0AIg-tech+AF8-defense+AF8-tower+AF8-full.html+ACIAPg-Defense Tower+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-7000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-30+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-16+ADw-/TD+AD4APA-TD+AD4APA-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/farm/farm.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Farm+ACIAPgA8-A HREF+AD0AIg-tech+AF8-farm+AF8-full.html+ACIAPg-Farm+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/stone.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Stone+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-50+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPg--10+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-3000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-5+ADw-/TD+AD4APA-TD+AD4APA-IMG SRC+AD0AIg-images/resources/food.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Food+ACIAPgAm-nbsp+ADs-20+ACY-nbsp+ADsAPA-/TD+AD4-
++ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/technodrome/technodrome.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Technodrome+ACIAPgA8-A HREF+AD0AIg-tech+AF8-technodrome+AF8-full.html+ACIAPg-Technodrome+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-200+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-200+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER+AD4-6000+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4--+ADw-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4APA-a href+AD0AIg-attack+AF8-and+AF8-armor+AF8-types.html+ACM-wood+ACIAPg-Wood+ADw-/A+AD4APA-/TD+AD4APA-TD ALIGN+AD0-CENTER+AD4-5+ADw-/TD+AD4APA-TD+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPgAm-nbsp+ADs-200+ACY-nbsp+ADsAPA-/TD+AD4-
++ADw-/TABLE+AD4-
++ADw-H3+AD4-Upgrades+ADw-/H3+AD4APA-TABLE BORDER+AD0-1+AD4APA-TR+AD4- +ADw-TH WIDTH+AD0-200+AD4- Name
+						+ADw-TH+AD4- Cost
+						+ADw-TH+AD4- Increases
+						+ADw-TH+AD4- Affects
+						+ADw-TH+AD4- Enables to build
+					+ADw-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/advanced+AF8-architecture/advanced+AF8-architecture.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Advanced Architecture+ACIAPgA8-A HREF+AD0AIg-tech+AF8-advanced+AF8-architecture+AF8-full.html+ACIAPg-Advanced Architecture+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-200+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADsAPA-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADs-
++ADw-TD+AD4APA-A HREF+AD0AIg-tech+AF8-defense+AF8-tower+AF8-full.html+ACIAPg-Defense Tower+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-air+AF8-ballista+AF8-full.html+ACIAPg-Air Ballista+ADw-/A+AD4APA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/blade+AF8-weapons/blade.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Blade Weapons+ACIAPgA8-A HREF+AD0AIg-tech+AF8-blade+AF8-weapons+AF8-full.html+ACIAPg-Blade Weapons+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-200+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADs-Attack+ACY-nbsp+ADs-Strength:+ACY-nbsp+ADsAPA-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADsAPA-A HREF+AD0AIg-tech+AF8-swordman+AF8-full.html+ACIAPg-Swordman+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-guard+AF8-full.html+ACIAPg-Guard+ADw-/A+AD4-
++ADw-TD+AD4AJg-nbsp+ADsAPA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/piercing+AF8-weapons/piercing.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Piercing Weapons+ACIAPgA8-A HREF+AD0AIg-tech+AF8-piercing+AF8-weapons+AF8-full.html+ACIAPg-Piercing Weapons+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADs-Attack+ACY-nbsp+ADs-Strength:+ACY-nbsp+ADsAPA-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADsAPA-A HREF+AD0AIg-tech+AF8-archer+AF8-full.html+ACIAPg-Archer+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-horseman+AF8-full.html+ACIAPg-Horseman+ADw-/A+AD4-
++ADw-TD+AD4AJg-nbsp+ADsAPA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/robotics/robotics.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Robotics+ACIAPgA8-A HREF+AD0AIg-tech+AF8-robotics+AF8-full.html+ACIAPg-Robotics+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADsAPA-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADsAPA-A HREF+AD0AIg-tech+AF8-barracks+AF8-full.html+ACIAPg-Barracks+ADw-/A+AD4-
++ADw-TD+AD4APA-A HREF+AD0AIg-tech+AF8-battle+AF8-machine+AF8-full.html+ACIAPg-Battle Machine+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-airship+AF8-full.html+ACIAPg-Airship+ADw-/A+AD4APA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/shield+AF8-level+AF8-1/shield1.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Shield Level 1+ACIAPgA8-A HREF+AD0AIg-tech+AF8-shield+AF8-level+AF8-1+AF8-full.html+ACIAPg-Shield Level 1+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-50+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADs-Armor:+ACY-nbsp+ADsAPA-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADsAPA-A HREF+AD0AIg-tech+AF8-swordman+AF8-full.html+ACIAPg-Swordman+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-guard+AF8-full.html+ACIAPg-Guard+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-horseman+AF8-full.html+ACIAPg-Horseman+ADw-/A+AD4-
++ADw-TD+AD4AJg-nbsp+ADsAPA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/shield+AF8-level+AF8-2/shield2.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Shield Level 2+ACIAPgA8-A HREF+AD0AIg-tech+AF8-shield+AF8-level+AF8-2+AF8-full.html+ACIAPg-Shield Level 2+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-250+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADs-Armor:+ACY-nbsp+ADsAPA-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADsAPA-A HREF+AD0AIg-tech+AF8-swordman+AF8-full.html+ACIAPg-Swordman+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-guard+AF8-full.html+ACIAPg-Guard+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-horseman+AF8-full.html+ACIAPg-Horseman+ADw-/A+AD4-
++ADw-TD+AD4AJg-nbsp+ADsAPA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/speedup+AF8-cow+AF8-production/stables.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Speedup Cow Production+ACIAPgA8-A HREF+AD0AIg-tech+AF8-speedup+AF8-cow+AF8-production+AF8-full.html+ACIAPg-Speedup Cow Production+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-75+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-100+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/stone.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Stone+ACIAPgAm-nbsp+ADsAJg-nbsp+ADs-50+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADs-Production+ACY-nbsp+ADs-Speed:+ACY-nbsp+ADvfTQA8-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADsAPA-A HREF+AD0AIg-tech+AF8-farm+AF8-full.html+ACIAPg-Farm+ADw-/A+AD4-
++ADw-TD+AD4AJg-nbsp+ADsAPA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/stables/stables.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Stables+ACIAPgA8-A HREF+AD0AIg-tech+AF8-stables+AF8-full.html+ACIAPg-Stables+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-200+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADsAPA-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADs-
++ADw-TD+AD4APA-A HREF+AD0AIg-tech+AF8-horseman+AF8-full.html+ACIAPg-Horseman+ADw-/A+AD4-, Enables command '+ADw-i+AD4-Speedup Cow Production+ADw-/i+AD4-' for: +ADw-A HREF+AD0AIg-tech+AF8-farm+AF8-full.html+ACIAPg-Farm+ADw-/A+AD4APA-TR+AD4APA-TD+AD4- +ADw-IMG SRC+AD0AIg-images/tech/training+AF8-field/training+AF8-field.bmp+ACI- HEIGHT+AD0-32 WIDTH+AD0-32 ALT+AD0AIg-Training Field+ACIAPgA8-A HREF+AD0AIg-tech+AF8-training+AF8-field+AF8-full.html+ACIAPg-Training Field+ADw-/A+AD4APA-/TD+AD4APA-TD+AD4APA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/gold.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Gold+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADsAPA-NOBR+AD4APA-IMG SRC+AD0AIg-images/resources/wood.bmp+ACI- HEIGHT+AD0-16 WIDTH+AD0-16 ALT+AD0AIg-Wood+ACIAPg-150+ADw-/NOBR+AD4AJg-nbsp+ADs-
++ADw-TD ALIGN+AD0-CENTER   +AD4AJg-nbsp+ADs-Production+ACY-nbsp+ADs-Speed:+ACY-nbsp+ADvXnQA8-TD ALIGN+AD0-CENTER+AD4AJg-nbsp+ADsAPA-A HREF+AD0AIg-tech+AF8-barracks+AF8-full.html+ACIAPg-Barracks+ADw-/A+AD4-
++ADw-TD+AD4-Enables command '+ADw-i+AD4-Hold Position+ADw-/i+AD4-' for: +ADw-A HREF+AD0AIg-tech+AF8-archer+AF8-full.html+ACIAPg-Archer+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-battle+AF8-machine+AF8-full.html+ACIAPg-Battle Machine+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-swordman+AF8-full.html+ACIAPg-Swordman+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-catapult+AF8-full.html+ACIAPg-Catapult+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-horseman+AF8-full.html+ACIAPg-Horseman+ADw-/A+AD4-, +ADw-A HREF+AD0AIg-tech+AF8-guard+AF8-full.html+ACIAPg-Guard+ADw-/A+AD4APA-/TABLE+AD4-
++ADwAIQ--- start footer --+AD4-
++ADwAIQ--- end footer --+AD4-
+
+        </div>
+    </div>
+</div>
+<div id="#footer">
+  <p class="sct_footer">
+    RSS<a href="https://github.com/Glest/glest-source/blob/develop/README.md#stay-informed-updates">
+    <img src="/docs/assets/icons/si-glyph-rss.svg" alt="rss icon" title="ChangeLog and list of rss feeds" height="23" width="23"></a>
+  </p>
+  <div class="sct_footer">
+    <p>
+      Information and graphics on this site are
+      licensed under a <a
+      href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA
+      license</a>. Some content is derived from the <a href="https://megaglest.org/">MegaGlest</a> project and
+      <a href="http://www.wildfiregames.com/">Wildfire Games</a>
+    </p>
+  </div>
+  </div>
+    <!--The following included for responsize web design with Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+

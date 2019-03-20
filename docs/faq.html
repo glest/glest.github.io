@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Frequently Asked Questions (FAQ) | Glest
+    </title>
+  <meta name="author" content="MathuSum Mut" />
+  <meta name="description" content="Glest RTS Game Help and Documentation">
+  <meta name="keywords" content="glest,game,rts,3d,strategy,multiplayer,battle,free,open,source,network,windows,linux,mac,download" />
+  <meta name="ROBOTS" content="INDEX, FOLLOW, ARCHIVE" />
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml" title="Glest Blog">
+  <link rel="alternate" type="application/rss+xml" title="Recent Changes to website" href="https://github.com/Glest/glest.github.io/commits/master.atom">
+  <link rel="alternate" type="application/rss+xml" title="Recent Commits to glest-source:develop" href="https://github.com/Glest/glest-source/commits/develop.atom">
+  <link rel="alternate" type="application/rss+xml" title="Recent Commits to glest-data:develop" href="https://github.com/Glest/glest-data/commits/develop.atom">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47932306-3"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'UA-47932306-3');
+	</script>
+  <!--including Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" crossorigin="anonymous">
+  <!--including local stylesheet-->
+  <link rel="stylesheet" href="/docs/assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header><img class="centered" src="/docs/assets/images/logo_412x207.png" alt="Glest logo" title="Glest logo"
+        width="412" height="207"> </header>
+    <h2 class="subtitle">Frequently Asked Questions (FAQ)</h2>   
+
+  <div class="row">
+    <div class="col-md-3">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav flex-column navbar-nav mr-auto">
+  <li class="nav-item" > <a class="nav-link" href="/index.html">Home</a></li>
+  <li class="nav-item" > <a class="nav-link" href="https://github.com/Glest/glest-source#download-for-windows">Download</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/screenshots.html">Screenshots</a></li>
+  <li class="nav-item" > <a class="nav-link" href="https://github.com/Glest/glest-source">on GitHub</a></li>
+  <li class="nav-item" > <a class="nav-link" href="https://groups.google.com/forum/#!forum/glest">Message Board</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/system_requirements.html">System Requirements</a></li>
+  <li class="nav-item" > <a class="nav-link" title="Shows results of recent network games and available game servers" href="http://master.megaglest.org">Games List</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/controls.html">Controls</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/faq.html">FAQ</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/videos.html">Videos</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/tips_for_beginners.html">Tips for Beginners</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/strategy_guide.html">Strategy Guide</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/scenarios/">Scenarios</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/modding/">Modding</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/modelling/">Modelling</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/lua_scripting.html">LUA Scripting</a></li>
+  <li class="nav-item" > <a class="nav-link" href="/docs/index.html">Techs</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="col-md-9">
+      <p class="text-right"><a href="https://github.com/Glest/glest.github.io/tree/master/docs/faq.html">Edit or Improve this page</a></p>
+        <ul>
+  <li><a href="#differences">How is Glest Different from MegaGlest?</a></li>
+  <li><a href="#releasedate">When is the date of the next release?</a></li>
+  <li><a href="#contributing">I want to contribute. Where do I start?</a></li>
+  <li><a href="#openaticket">I have a suggestion or a feature request. Should I open a ticket?</a></li>
+  <li><a href="#headlessserver">What is a headless server?</a></li>
+  <li><a href="#hostinggameserver">How do I host a server?</a></li>
+  <li><a href="#portforwarding">What ports do I need to forward?</a></li>
+  <li><a href="#headlessalone">Can I connect to a server that's already running on my computer?</a></li>
+  <li><a href="#steam">Are you on Steam?</a></li>
+</ul>
+
+<h4 id="differences">How is Glest Different from MegaGlest?</h4>
+<p>See the page <a href="differences.html">Differences from MegaGlest</a></p>
+
+<h4 id="releasedate">When is the date of the next release?</h4>
+<p>From the <b>milestone</b> pages, you can view the approximate date
+of the next release, as well as which issues need to be done before the
+release is issued:</p>
+<ul>
+<li><a href="https://github.com/Glest/glest-source/milestones">Milestones in the source code repo</a><br /></li>
+<li><a href="https://github.com/Glest/glest-data/milestones">Milestones in the data repo</a></li>
+</ul>
+
+<p>The target dates and issues listed may change but those listed
+represent our goals at the time they are updated.</p>
+
+<h4 id="contributing">I want to contribute. Where do I start?</h4>
+<p>Please see <a href="https://github.com/Glest/glest-source/blob/develop/CONTRIBUTING.md">the CONTRIBUTING doc</a>.</p>
+
+<p>After we get to know you better and understand what your skills are, we
+will be able to offer you individual tickets. Before that happens,
+you must browse through the tickets to find one that interests
+you and that suits you. Because this is a volunteer project, we
+recommend only working on tickets that you find interesting.</p>
+
+<h4 id="openaticket">I have a suggestion or a feature request. Should I open a ticket?</h4>
+
+<p>Yes. You are welcome to present ideas in the <a
+href="https://discord.gg/WaAaXS7">Glest Discord chat room</a>, but
+often someone may then tell you to open a ticket.
+
+<ul>
+
+  <li> Having a ticket means there will be a permanent record of a
+  discussion. Discussion in chat often scrolls away never to be seen
+  again.</li>
+
+  <li>Allows people who are absent from chat to view the discussion
+  later and offer feedback or solutions</li>
+
+ <li>If we have to spend too much time discussing feature requests in
+ chat, our focus is taken away from a task we might currently be
+ working on</li>
+
+ <li>It helps the project managers by saving them time. You may see
+ your suggestion as only one item, but remember they get suggestions
+ from many people.</li>
+
+ <li>If you don't care enough to spend the time to open a ticket, we
+ don't care enough to spend any time considering your suggestion</li>
+
+</ul>
+
+<p>Sometimes your suggestion will be rejected. We will always try to respond and give a reason,
+because we appreciate you care enough to make the suggestion and that
+you're a fan of the game. Sometimes it may take us a while to respond,
+or to complete the ticket. You will get notified of any replies by
+email through GitHUb as long as you are subscribed to the ticket.</p>
+
+<h4 id="headlessserver">What is a headless server?</h4>
+<p>
+  A headless server is a "dedicated" server. People can connect to it
+  anytime to start a game. Once the game has started, no one can join
+  to start a new game until the one that's running has completed.You do
+  not need to play a game that is starting. The game setup interface
+  appears to people who connect to your headless server (you will not
+  see the game setup menu unless you connect to your server by starting
+  a new instance of Glest from another computer).
+</p>
+
+<h4 id="hostinggameserver">How do I host a server?</h4>
+
+<p>First, you'll need to set-up <a href="#portforwarding">port-forwarding</a> (You'll only need to do
+that once). To run your own <a href="#headlessserver">headless (dedicated) server</a>:</p>
+
+<pre>
+    glest --headless-server-mode
+</pre>
+<p>To start a temporary server, enter the Glest lobby and click "Host Game"
+</p>
+<p>To host a LAN game, use the LAN option from the Glest game
+menu</p>
+
+<h4 id="portforwarding">What ports do I need to foward?</h4>
+<p>TCP ports 61357-61368</p>
+
+<h4 id="headlessalone">Can I connect to a server that's already running on my computer?</h4>
+  <p>When serving a running game, a headless Glest server uses almost
+the same amount of computer resources as a running game. Therefore, it
+is recommended not to try connecting your ZG client to a headless
+server running on the same computer. The beginning of the game may run
+well, but during gameplay later, there may be problems.</p>
+
+<h4 id="steam">Are you on Steam?</h4>
+  <p>Although you can't play Glest through <i>Steam</i>, you can connect with us
+     there through <a href="https://steamcommunity.com/groups/glest">our public group</a>.
+  </p>
+
+
+    </div>
+  </div>
+</div>
+<div id="#footer">
+  <p class="sct_footer">
+    RSS<a href="https://github.com/Glest/glest-source/blob/develop/README.md#stay-informed-updates">
+    <img src="/docs/assets/icons/si-glyph-rss.svg" alt="rss icon" title="ChangeLog and list of rss feeds" height="23" width="23"></a>
+  </p>
+  <div class="sct_footer">
+    <p>
+      Information and graphics on this site are
+      licensed under a <a
+      href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA
+      license</a>. Some content is derived from the <a href="https://megaglest.org/">MegaGlest</a> project and
+      <a href="http://www.wildfiregames.com/">Wildfire Games</a>
+    </p>
+  </div>
+  </div>
+    <!--The following included for responsize web design with Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
+
