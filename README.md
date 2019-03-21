@@ -20,7 +20,7 @@ directory, run
     
 to automatically install any required gems. Then
 
-    jekyll serve
+    bundle exec jekyll serve
 
 You can then view the site in your web browser at http://localhost:4000
 Click the link for **Game Help and Documentation** to take you to the
@@ -46,7 +46,7 @@ Scenario, Tilesets:
 Name|CRC|Description|URL|imageURL
 
 Techs:
-Name|Faction Count|CRC|Description|URL|imageURL
+Name|FactionCount|CRC|Description|URL|imageURL
 
 Maps:
-Name|Player Count|CRC|Description|URL|imageURL
+Name|PlayerCount|CRC|Description|URL|imageURL
