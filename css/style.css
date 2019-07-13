@@ -1,0 +1,438 @@
+html, body
+{
+   height: 100%;
+   width: 100%;
+}
+
+.navbar-inverse {
+    background-color: #172531 !important;
+    border-color: #526575!important;
+    padding: 0%  0% 0% 0%;
+    font-size: 1em ;
+    font-weight: bold;
+    
+}
+
+.dropdown-menu {
+    background-color: #273f54 !important;
+
+ }
+.dropdown-menu a{
+
+    color: white !important;
+    font-size: 1.1em;
+    font-family: 'Roboto', serif;
+    margin: 10px 0;
+    
+ }
+
+.dropdown-menu a:hover {
+    color: white !important;
+
+ }
+
+.navbar-brand img {
+    height: 36px;
+    padding: 0 0 15px;
+
+}
+
+
+.navbar-inverse .navbar-nav li a {
+   color: white;
+
+}
+
+.navbar-inverse .navbar-nav li a.active {
+   
+   color: white;
+
+}
+
+.navbar-inverse .navbar-nav li a:hover  {
+   color: white !important;
+   background-color: #111 !important;
+
+}
+
+
+
+
+
+#home
+  {
+     background:url(../backs.jpg) no-repeat center center fixed;
+     display: table;
+     height: 100%;
+     width: 100%;
+     position: relative;
+     background-size: cover;
+
+}
+
+.landing-text {
+   display: table-cell;
+   text-align: center;
+   vertical-align: middle;  
+}
+
+.landing-text img {
+   height: auto;
+   width: 500px;
+
+}
+
+.landing-text h1 {
+   font-size: 225%;
+   font-family: 'Domine', serif;  
+   color: white;
+   font-weight: bold;
+   text-shadow: 1px 1px 3px black;
+}
+
+.landing-text h3 {
+   font-size: 60%;
+
+}
+
+.landing-text h2 {
+   font-size: 10%;
+
+}
+
+
+.download
+  { 
+   cursor: pointer;
+   border: 2px solid #515f6c;
+   padding: 13px 30px 11px 26px;
+   font-family: 'Poiret One', serif;
+   font-weight: bold;
+   color: white;
+   font-size: 19px;
+   border-radius:30px;
+   margin-right: 30px;
+   text-decoration: none;
+	background: #0095cd;
+	background: -webkit-gradient(linear, left top, left bottom, from(#172531), to(#5b8bb4));
+	background: -moz-linear-gradient(top,  #172531,  #5b8bb4);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#172531', endColorstr='#5b8bb4');
+
+  }
+
+.watch
+  { 
+   cursor: pointer;
+   border: 2px solid #515f6c;
+   background-color: transparent;
+   padding: 12px 35px 11px 30px;
+   font-family: 'Poiret One', serif;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   font-size: 19px;
+   border-radius:30px;
+
+  }
+
+.download:hover
+ 
+  {
+        text-decoration: none;
+        color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#304f6a), to(#6995bb));
+	background: -moz-linear-gradient(top,  #304f6a,  #6995bb);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#304f6a', endColorstr='#6995bb');
+
+   }
+
+.download:active
+ 
+  {
+	transform: translateY(3px);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e3a45), to(#14212c));
+	background: -moz-linear-gradient(top,  #2e3a45,  #14212c);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e3a45', endColorstr='#14212c');
+
+   }
+
+.watch:hover
+ 
+  {
+   text-decoration: none;
+   color: #fff;
+   background: #111b24;
+   transition: all 0.3s ease-in;
+
+   }
+.watch:active
+  {
+	transform: translateY(1px);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2e3a45), to(#14212c));
+	background: -moz-linear-gradient(top,  #2e3a45,  #14212c);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e3a45', endColorstr='#14212c');
+   }
+
+
+
+@media (min-width: 1920px) {
+
+
+.landing-text img {
+   height: auto;
+   width: 800px;
+
+}    
+.landing-text h1 {
+   font-size: 330%;
+   font-family: 'Domine', serif;  
+   color: white;
+   font-weight: bold;
+}
+.landing-text h3 {
+   font-size: 220%;
+   font-family: 'Domine', serif;  
+   color: white;
+
+}
+
+.download
+  { 
+   border: 3px solid #515f6c;
+   padding: 7px 22px;
+   color: white;
+   font-size: 36px;
+   margin-right: 35px;
+
+  }
+
+.watch
+  { 
+   border: 3px solid #515f6c;
+   padding: 7px 22px;
+   color: white;
+   font-size: 36px;
+
+  }
+}
+
+@media (max-height: 568px) {
+ 
+.landing-text img {
+   height: auto;
+   width: 380px;
+
+} 
+.landing-text h1 {
+   font-size: 170%;
+   font-family: 'Domine', serif;  
+   color: white;
+   font-weight: bold;
+}
+
+.landing-text h2 {
+   font-size: 10%;
+
+}
+
+.landing-text h3 {
+   font-size: 10%;
+
+}
+
+.download
+  { 
+   padding: 6px 18px;
+   color: white;
+   font-size: 16px;
+   margin-right: 25px;
+
+  }
+
+.watch
+  { 
+   padding: 6px 15px;
+   color: white;
+   font-size: 16px;
+
+  }
+
+
+}
+
+@media (max-height: 428px) {
+ 
+.landing-text img {
+   height: auto;
+   width: 330px;
+
+} 
+.landing-text h1 {
+   font-size: 160%;
+   font-family: 'Domine', serif;  
+   color: white;
+   font-weight: bold;
+}
+
+.landing-text h2 {
+   font-size: 30px;
+
+}
+.landing-text h3 {
+   font-size: 10%;
+
+
+}
+.download
+  { 
+   padding: 6px 18px;
+   color: white;
+   font-size: 14px;
+   margin-right: 25px;
+
+  }
+
+.watch
+  { 
+   padding: 6px 15px;
+   color: white;
+   font-size: 14px;
+
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+
+.landing-text img {
+   height: auto;
+   width: 420px;
+
+}    
+.landing-text h1 {
+   font-size: 150%;
+   font-family: 'Domine', serif;  
+   color: white;
+   font-weight: bold;
+}
+.landing-text h3 {
+   font-size: 50%;
+   font-family: 'Domine', serif;  
+   color: white;
+
+}
+
+.download
+  { 
+   padding: 9px 18px;
+   color: white;
+   font-size: 16px;
+   margin-right: 25px;
+
+  }
+
+.watch
+  { 
+   padding: 9px 15px;
+   color: white;
+   font-size: 16px;
+
+  }
+
+
+
+}
+
+@media  (max-width: 558px) {
+
+
+.landing-text img {
+   height: auto;
+   width: 330px;
+
+}    
+.landing-text h1 {
+   font-size: 120%;
+   font-family: 'Domine', serif;  
+   color: white;
+   font-weight: bold;
+}
+
+.landing-text h3 {
+   font-size: 20%;
+   font-family: 'Domine', serif;  
+   color: white;
+
+}
+
+.download
+  { 
+   padding: 9px 18px;
+   color: white;
+   font-size: 12px;
+   margin-right: 20px;
+   border: 1px solid #515f6c;
+
+
+  }
+
+.watch
+  { 
+   padding: 8px 15px;
+   color: white;
+   font-size: 12px;
+   border: 1px solid #515f6c;
+
+
+  }
+	
+}
+		
+	
+@media  (max-width: 338px) {
+
+
+.landing-text img {
+   height: auto;
+   width: 240px;
+
+}    
+.landing-text h1 {
+   font-size: 100%;
+   font-family: 'Domine', serif;  
+   color: white;
+   font-weight: bold;
+}
+.landing-text h3 {
+   font-size: 0px;
+   font-family: 'Domine', serif;  
+   color: white;
+
+}
+
+
+.download
+  { 
+   padding: 9px 18px;
+   color: white;
+   font-size: 10px;
+   margin-right: 20px;
+   border: 1px solid #515f6c;
+
+  }
+
+.watch
+  { 
+   padding: 8px 15px;
+   color: white;
+   font-size: 10px;
+   border: 1px solid #515f6c;
+
+  }
+	
+}
+
+
+
