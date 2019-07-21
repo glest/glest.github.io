@@ -1,11 +1,8 @@
-html, body
-{
-   height: 100%;
-   width: 100%;
+* {
+	transition: 75ms;
 }
 
-body
- {
+body {
      background: linear-gradient(to  top, #2f4c65, #172531) no-repeat center center fixed;
      display: table;
      height: 100%;
