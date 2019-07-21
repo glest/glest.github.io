@@ -2,6 +2,11 @@
 	transition: 75ms;
 }
 
+body {
+	width: 100%;
+	height: 100%;
+}
+
 #home {
      background: linear-gradient(to top, #172530, #172533) no-repeat center center fixed;
      display: table;

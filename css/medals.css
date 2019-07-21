@@ -2,15 +2,15 @@
 	transition: 75ms;
 }
 
-body
- {
-     background: linear-gradient(to  top, #2f4c65, #172531) no-repeat center center fixed;
+body {
+	width: 100%;
+	height: 100%;
+    background: linear-gradient(to  top, #2f4c65, #172531) no-repeat center center fixed;
      display: table;
      height: 100%;
      width: 100%;
      position: relative;
      background-size: cover;
-
 }
 
 
@@ -20,14 +20,12 @@ body
     font-size: 1.2em ;
     font-weight: bold;
     border-radius: 30px !important;  
-
-
 }
 
 .dropdown-menu {
     background-color: #526575!important;
-
  }
+ 
 .dropdown-menu a {
     
     color: white !important;
