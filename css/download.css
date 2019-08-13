@@ -111,15 +111,15 @@ html, body {
 	content: 'DOWNLOAD';
         font-family: 'Poiret One', serif; 
         font-weight: bold;
-        left: 71px;
-        top: -28px;
+        left: 7px;
+        top: -1px;
 }
 .download-windows:after {
         font-size: 1.1em;
 	content: 'DOWNLOAD';
         font-family: 'Poiret One', serif; 
         font-weight: bold;
-        left: -52px;
+        left: 20px;
 	top: -120px;
 	opacity: 0;
 }
@@ -130,11 +130,12 @@ html, body {
 }
 .download-windows:hover:before {
 	top: 60px;
+        left: 20px;
 	opacity: 0;
 }
 .download-windows:hover:after {
-	top: -28px;
-        left: -53px;
+	top: -60px;
+        left: 22px;
 	opacity: 1;
 }
 .download-windows:active {
@@ -175,15 +176,15 @@ html, body {
 	content: 'DOWNLOAD';
         font-family: 'Poiret One', serif;
         font-weight: bold;
-        left: 71px;
-        top: -28px;
+        left: 7px;
+        top: -1px;
 }
 .download-linux:after {
         font-size: 1.1em;
 	content: 'DOWNLOAD';
         font-family: 'Poiret One', serif;
         font-weight: bold;
-        left: -52px;
+        left: 20px;
 	top: -120px;
 	opacity: 0;
 }
@@ -194,12 +195,13 @@ html, body {
 }
 .download-linux:hover:before {
 	top: 60px;
+        left: 20px;
 	opacity: 0;
       
 }
 .download-linux:hover:after {
-	top: -28px;
-        left: -53px;
+	top: -60px;
+        left: 22px;
 	opacity: 1;
 }
 .download-linux:active {
