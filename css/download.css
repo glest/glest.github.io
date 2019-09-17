@@ -92,35 +92,24 @@ html, body {
 	color: rgba(255,255,255,.9);
 	line-height: 60px;
 	text-align: center;
+        align-items: center;
+        text-decoration: none !important;
 	letter-spacing: 5px;
 	overflow: hidden;
+        
 	transition: all .2s cubic-bezier(.67,.13,.1,.81), transform .3s cubic-bezier(.67,.13,.1,.81);
 }
 
-.download-windows:before, .download-windows:after {
-        position: relative;
-	top: 0px;
-	left: 0px; 
-	width: 100%;
-	height: 100%;
-	opacity: 1;
-	transition: all .2s cubic-bezier(.67,.13,.1,.81);
-}
 .download-windows:before {
         font-size: 1.1em;
 	content: 'DOWNLOAD';
-        font-family: 'Poiret One', serif; 
+        font-family: 'Poiret One', serif !important; 
         font-weight: bold;
         text-align: center;
+        align-items: center;
+
 }
-.download-windows:after {
-        font-size: 1.1em;
-	content: 'DOWNLOAD';
-        font-family: 'Poiret One', serif; 
-        
-	top: -120px;
-	opacity: 0;
-}
+
 .download-windows:hover {
 	width: 230px;
         color: #0dffff;  
@@ -151,15 +140,6 @@ html, body {
 	transition: all .2s cubic-bezier(.67,.13,.1,.81), transform .3s cubic-bezier(.67,.13,.1,.81);
 }
 
-.download-linux:before, .download-linux:after {
-        position: relative;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	opacity: 1;
-	transition: all .2s cubic-bezier(.67,.13,.1,.81);
-}
 .download-linux:before {
         font-size: 1.1em;
 	content: 'DOWNLOAD';
@@ -168,34 +148,18 @@ html, body {
         left: 7px;
         top: -1px;
 }
-.download-linux:after {
-        font-size: 1.1em;
-	content: 'DOWNLOAD';
-        font-family: 'Poiret One', serif;
-        font-weight: bold;
-        left: 20px;
-	top: -120px;
-	opacity: 0;
-}
+
 .download-linux:hover {
 	width: 230px;
         color: #0dffff;   
         text-decoration: none !important;   
 }
-.download-linux:hover:before {
-	top: 60px;
-        left: 20px;
-	opacity: 0;
-      
-}
-.download-linux:hover:after {
-	top: -60px;
-        left: 22px;
-	opacity: 1;
-}
+
 .download-linux:active {
 	transform: translateY(3px); 
 }
+
+
 
 
 
