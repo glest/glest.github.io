@@ -202,6 +202,14 @@ html, body {
 
 }
 
+.content .paper {
+  padding: 60px;
+
+}
+.content .paper:hover {
+  padding: 60px;
+}
+
 }
 
 @media  (max-width: 558px) {
@@ -220,6 +228,14 @@ html, body {
 .content .paper {
   width: 75vw;
 
+}
+
+.content .paper {
+  padding: 40px;
+
+}
+.content .paper:hover {
+  padding: 40px;
 }
   
 }
@@ -240,6 +256,14 @@ html, body {
 .content .paper {
   width: 70vw;
 
+}
+
+.content .paper {
+  padding: 26px;
+
+}
+.content .paper:hover {
+  padding: 26px;
 }
 
 }
