@@ -100,37 +100,37 @@ html, body
 
   
 /* CSS buttons effects */ 
-}
+
 .box-1 img {
    width: 33.5vw;
    height: auto;
-   opacity: 0.6;
+   opacity: 0.7;
 
 }
 
 .box-11 img {
    width: 32.5vw;
    height: auto;
-   opacity: 0.6;
+   opacity: 0.7;
 
 }
 .box-12 img {
    width: 31vw;
    height: auto;
-   opacity: 0.6;
+   opacity: 0.7;
 
 }
 .box-13 img {
    width: 29.3vw;
    height: auto;
-   opacity: 0.6;
+   opacity: 0.7;
 
 }
 
 .box-2 img {
    width: 40vw;
    height: auto;
-   opacity: 0.7;
+   opacity: 0.75;
    border: 2px solid white;
    border-radius: 60px;
    
