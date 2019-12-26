@@ -88,6 +88,7 @@ html, body
   box-shadow: 0 2px 4px 0 rgba(0,0,0, 0.5);, 0 4px 8px 0 rgba(0,0,0, 0.5);;
   width: 85vw;
   margin-bottom: 20px;
+  border-radius: 7px;
 }
 
 .content .paper:hover {
@@ -95,6 +96,7 @@ html, body
   opacity: 0.9;
   padding: 60px;
   height: auto;
+  border-radius: 7px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.5);, 0 5px 10px 0 rgba(0,0,0, 0.5);;
 }
 
@@ -105,16 +107,15 @@ html, body
    width: 33.5vw;
    height: auto;
    opacity: 0.7;
-
 }
 
 .btn-b1 {
    position: relative;
-   left: 7.5vw;	
+   left: 8.5vw;	
 }
 
 .box-11 img {
-   width: 32.5vw;
+   width: 33.5vw;
    height: auto;
    opacity: 0.7;
 
@@ -122,11 +123,11 @@ html, body
 
 .btn-b11 {
    position: relative;
-   left: 9.5vw;	
+   left: 8.5vw;	
 }
 
 .box-12 img {
-   width: 31vw;
+   width: 33.5vw;
    height: auto;
    opacity: 0.7;
 
@@ -134,19 +135,19 @@ html, body
 
 .btn-b12 {
    position: relative;
-   left: 11.5vw;	
+   left: 8.5vw;		
 }
 
 .box-13 img {
-   width: 29.3vw;
+   width: 33.5vw;
    height: auto;
    opacity: 0.7;
 
 }
 
-.btn-b11 {
+.btn-b13 {
    position: relative;
-   left: 13.5vw;	
+   left: 8.5vw;		
 }
 
 .box-2 img {
@@ -154,7 +155,7 @@ html, body
    height: auto;
    opacity: 0.75;
    border: 2px solid white;
-   border-radius: 60px;
+   border-radius: 100px;
    
    
 }
@@ -242,39 +243,30 @@ html, body
 .content .paper {
   padding: 50px;
 }
+
 .content .paper:hover {
   padding: 50px;
-
 }
 
 .box-1 img {
    width: 32vw;
-   height: auto;
-
 }
 
 .box-11 img {
-   width: 31vw;
-   height: auto;
-
+   width: 32vw;
 }
 .box-12 img {
-   width: 30vw;
-   height: auto;
-
+   width: 32vw;
 }
 .box-13 img {
-   width: 29vw;
-   height: auto;
-
+   width: 32vw;
 }
 
 .box-2 img {
    width: 38vw;
-   height: auto;
-
+   position: relative;
+   left: 1vw;
 }
-
 
 }
 
@@ -283,31 +275,23 @@ html, body
 .content .paper {
   padding: 45px;
 }
+
 .content .paper:hover {
   padding: 45px;
-
 }
 
 .box-1 img {
    width: 31.6vw;
-   height: auto;
-
 }
 
 .box-11 img {
-   width: 30.6vw;
-   height: auto;
-
+   width: 31.6vw;
 }
 .box-12 img {
-   width: 29.6vw;
-   height: auto;
-
+   width: 31.6vw;
 }
 .box-13 img {
-   width: 28.6vw;
-   height: auto;
-
+   width: 31.6vw;
 }
 
 
@@ -318,31 +302,25 @@ html, body
 .content .paper {
   padding: 40px;
 }
+
 .content .paper:hover {
   padding: 40px;
-
 }
 
 .box-1 img {
    width: 30.8vw;
-   height: auto;
-
 }
 
 .box-11 img {
-   width: 29.8vw;
-   height: auto;
+   width: 30.8vw;
 
 }
 .box-12 img {
-   width: 28.8vw;
-   height: auto;
-
+   width: 30.8vw;
 }
-.box-13 img {
-   width: 27.8vw;
-   height: auto;
 
+.box-13 img {
+   width: 30.8vw;
 }
 
 
@@ -396,13 +374,15 @@ html, body
 
 .box-1 img {
   width: 45vw;
-  height: auto;	
+}
 
+.btn-a1 {
+   position: relative;
+   left: 1vw;
 }
 
 .btn-b1 {
-   position: relative;
-   left: 0vw;
+   left: 1vw;
    top: 22px;
    margin-bottom: 20px;	
 }
@@ -411,50 +391,47 @@ html, body
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 25px;
+  padding: 15px;
   font-size: 30px;
 
 }
 
 .box-11 img {
-   width: 38vw;
-   height: auto;
+  width: 45vw;
 }
 
 .btn-a11 {
    position: relative;
-   left: 2.2vw;
+   left: 1vw;
 }
 
 .btn-b11 {
    position: relative;
-   left: 2.2vw;
+   left: 1vw;
    top: 22px;
    margin-bottom: 20px;	
-}
+}	
 
 .box-12 {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 25px;
+  padding: 15px;
   font-size: 30px;
 
 }
 
 .box-12 img {
-   width: 34vw;
-   height: auto;
+  width: 45vw;
 }
 
 .btn-a12 {
    position: relative;
-   left: 3.2vw;
+   left: 1.2vw;
 }
 
 .btn-b12 {
-   position: relative;
-   left: 3.2vw;
+   left: 1.2vw;
    top: 22px;
    margin-bottom: 20px;	
 }
@@ -464,28 +441,31 @@ html, body
   display: flex;
   flex-direction: column;
   margin: 10px;
-  padding: 25px;
+  padding: 15px;
   font-size: 30px;
 
 }
 
 .box-13 img {
-   width: 30vw;
-   height: auto;
+  width: 45vw;
 }
 
 .btn-a13 {
-   position: relative;
-   left: 4.2vw;
+  position: relative;
+  left: 1.2vw;
 }
 
 .btn-b13 {
-   position: relative;
-   left: 4.2vw;
-   top: 22px;
-   margin-bottom: 20px;	
+  position: relative;
+  left: 1.2vw;
+  top: 22px;
+  margin-bottom: 20px;	
 }
 
+.box-2 img {
+  width: 50vw;
+  left: -14.3vw;
+}
 
 
 .img-shift-left {
@@ -525,25 +505,17 @@ html, body
 }
 
 .box-1 img {
-   width: 28vw;
-   height: auto;
-
+   width: 42vw;
 }
 
 .box-11 img {
-   width: 27vw;
-   height: auto;
-
+   width: 42vw;
 }
 .box-12 img {
-   width: 26vw;
-   height: auto;
-
+   width: 42vw;
 }
 .box-13 img {
-   width: 25vw;
-   height: auto;
-
+   width: 42vw;
 }
 
 
@@ -583,6 +555,19 @@ html, body
   padding: 25px;
 }
 
+.box-1 img {
+   width: 40vw;
+}
+
+.box-11 img {
+   width: 40vw;
+}
+.box-12 img {
+   width: 40vw;
+}
+.box-13 img {
+   width: 40vw;
+}
 
 
 }
@@ -596,6 +581,20 @@ html, body
   padding: 22px;
 }
 
+.box-1 img {
+   width: 38vw;
+}
+
+.box-11 img {
+   width: 38vw;
+}
+.box-12 img {
+   width: 38vw;
+}
+.box-13 img {
+   width: 38vw;
+}
+
 }
 
 @media (max-width: 348px) {
@@ -605,6 +604,20 @@ html, body
 }
 .content .paper:hover {
   padding: 20px;
+}
+
+.box-1 img {
+   width: 37vw;
+}
+
+.box-11 img {
+   width: 37vw;
+}
+.box-12 img {
+   width: 37vw;
+}
+.box-13 img {
+   width: 37vw;
 }
 
 
