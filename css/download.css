@@ -96,8 +96,7 @@ html, body {
         text-decoration: none !important;
 	letter-spacing: 5px;
 	overflow: hidden;
-        
-	transition: all .2s cubic-bezier(.67,.13,.1,.81), transform .3s cubic-bezier(.67,.13,.1,.81);
+
 }
 
 .download-windows:before {
@@ -137,7 +136,6 @@ html, body {
 	letter-spacing: 5px;
 	cursor: pointer;
 	overflow: hidden;
-	transition: all .2s cubic-bezier(.67,.13,.1,.81), transform .3s cubic-bezier(.67,.13,.1,.81);
 }
 
 .download-linux:before {
