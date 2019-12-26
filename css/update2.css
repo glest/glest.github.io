@@ -269,9 +269,13 @@ html, body {
 
 @media  (max-width: 768px) {
  
+#home {
+    height: 176%;
+}
+
 .left-wrap {
   width: 87vw;
-  height: 42vh;
+  height: 62vh;
   float: left;
   margin-right: 0px;
 
@@ -280,9 +284,9 @@ html, body {
 
 .right-wrap {
   width: 87vw;
-  height: 42vh;
+  height: 60vh;
   float: none;
-  top: 45vh;
+  top: 65vh;
   left: 1vw;
 
 } 
@@ -295,7 +299,7 @@ html, body {
 }
 
 .right-wrap img{
-   top: -40vh;
+   top: -60vh;
    left: 25vw;
    width: 35vw;
    height: auto;  
@@ -303,9 +307,16 @@ html, body {
  
 .img-button {
    top: 8.5vh;
-   left: 10.5vw;
-   padding: 2vh 5vw;
-   width: 20vw;
+   left: 27.7vw;
+   padding: 2vh 6vw;
+   width: 30vw;
+}
+
+#img-button-custom {
+   top: -54.5vh;
+   left: 27.7vw;
+   padding: 2vh 6vw;
+   width: 30vw;
 }
 
 .official-btn:before {
@@ -318,7 +329,6 @@ html, body {
    font-weight: bold;
    font-size: 1.5em;
    color: #e0e9f0;
-   top: -0vh !important;
 } 
 
 
@@ -326,10 +336,94 @@ html, body {
 
 @media  (max-width: 398px) {
 
+#home {
+    height: 155%;
+}
+
+.left-wrap img{
+   top: 5.5vh;
+   left: 10vw;
+   width: 68vw; 
+}
+
+.right-wrap img{
+   top: -60vh;
+   left: 10vw;
+   width: 68vw; 
+}
+ 
+.img-button {
+   top: 9.5vh;
+   left: 19.7vw;
+   padding: 2vh 6vw;
+   width: 50vw;
+}
+
+#img-button-custom {
+   top: -54.5vh;
+   left: 19.7vw;
+   padding: 2vh 6vw;
+   width: 50vw;
+}
+
+.official-btn:before {
+   font-weight: bold;
+   font-size: 1.5em;
+   color: #e0e9f0;
+}
+
+.custom-btn:before {
+   font-weight: bold;
+   font-size: 1.5em;
+   color: #e0e9f0;
+} 
+
+
 }
 
 @media  (max-width: 338px) {
-  
+ 
+#home {
+    height: 175%;
+}
+
+.left-wrap img{
+   top: 5.5vh;
+   left: 10vw;
+   width: 68vw; 
+}
+
+.right-wrap img{
+   top: -60vh;
+   left: 10vw;
+   width: 68vw; 
+}
+ 
+.img-button {
+   top: 9.5vh;
+   left: 19.7vw;
+   padding: 2vh 6vw;
+   width: 50vw;
+}
+
+#img-button-custom {
+   top: -54.5vh;
+   left: 19.7vw;
+   padding: 2vh 6vw;
+   width: 50vw;
+}
+
+.official-btn:before {
+   font-weight: bold;
+   font-size: 1.4em;
+   color: #e0e9f0;
+}
+
+.custom-btn:before {
+   font-weight: bold;
+   font-size: 1.4em;
+   color: #e0e9f0;
+}  
 
 }
 
